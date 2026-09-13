@@ -18,11 +18,8 @@
     <section class="section">
 
         <div class="section-heading">
-
             <p>GET IN TOUCH</p>
-
             <h2>Contact <span>Me</span></h2>
-
         </div>
 
         <div class="contact-grid">
@@ -41,7 +38,7 @@
 
                     <div>
                         <strong>Email</strong>
-                        <p>your@email.com</p>
+                        <p>YOUR-GMAIL@gmail.com</p>
                     </div>
                 </div>
 
@@ -50,7 +47,7 @@
 
                     <div>
                         <strong>GitHub</strong>
-                        <p>github.com/yourusername</p>
+                        <p>github.com/irshad7878</p>
                     </div>
                 </div>
 
@@ -59,29 +56,39 @@
 
                     <div>
                         <strong>LinkedIn</strong>
-                        <p>linkedin.com/in/yourusername</p>
+                        <p>linkedin.com/in/YOUR-USERNAME</p>
                     </div>
                 </div>
 
             </div>
 
-            <form id="contact-form">
 
-                <input type="text"
+            <!-- CONTACT FORM -->
+
+            <form id="contact-form"
+                  action="YOUR-FORMSPREE-ENDPOINT"
+                  method="POST">
+
+                <input
+                    type="text"
+                    name="name"
                     placeholder="Your Name"
                     required>
 
-                <input type="email"
+                <input
+                    type="email"
+                    name="email"
                     placeholder="Your Email"
                     required>
 
                 <textarea
+                    name="message"
                     placeholder="Your Message"
                     rows="6"
                     required></textarea>
 
                 <button type="submit"
-                    class="btn primary-btn">
+                        class="btn primary-btn">
 
                     Send Message
                     <i class="fas fa-paper-plane"></i>
@@ -100,8 +107,6 @@
         </a>
 
     </section>
-
-    <script src="script.js"></script>
 
 </body>
 
